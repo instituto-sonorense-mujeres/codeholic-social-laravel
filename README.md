@@ -44,3 +44,10 @@ php artisan make:migration add_columns_to_users_table
 
 php artisan migrate
 ```
+
+# PART-3
+
+```bash
+
+
+```
