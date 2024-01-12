@@ -39,29 +39,8 @@ php artisan make:model Comment -m
 php artisan make:model Group -m
 php artisan make:model GroupUser -m
 php artisan make:model Follower -m
-```
 
-```json
-{
-    "php.validate.executablePath": "D:/Ubuntu/home/razzor/www/laravel/laravel-social-media/vendor/bin/sail",
-}
+php artisan make:migration add_columns_to_users_table
 
-```
-
-```bash
-
-# commands:
-
-sudo touch /usr/local/bin/php
-
-sudo chmod +x /usr/local/bin/php
-
-# content:
-
-path=$(printf '%s\n' "${PWD##*/}")
-command="docker exec laravel.test-1 php "$@""
-echo "Running php on docker laravel.test-1"
-$command
-
-
+php artisan migrate
 ```

@@ -15,8 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255);
             $table->string('slug', 255);
+            $table->string('cover_path', 1024)->nullable();
+            $table->string('cover_url', 1024)->nullable();
+            $table->string('thumbnail_path', 1024)->nullable();
+            $table->string('thumbnail_url', 1024)->nullable();
+            $table->boolean('auto_approval')->default();
             $table->text('about')->nullable();
-            $table->foreignId('user_id')->nullable()->constraint('users');
+            $table->foreignId('user_id')->constraint('users');
+            $table->timestamp('deleted_at')->nullable();
+            $table->timestamp('deleted_by')->nullable()->constraint('users');
             $table->timestamps();
         });
     }
