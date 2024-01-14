@@ -46,12 +46,6 @@ php artisan make:migration add_columns_to_users_table
 php artisan migrate
 ```
 
-# PART-3
-
-```bash
-
-
-```
 
 # HOME-PC-REQUIREMENTS
 
@@ -87,5 +81,14 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 1c8a
 
 # cambiar 'DB_HOST' en archivo .env por la ip retornada o nombre del contenedor, ejemplo:
 DB_HOST=codeholic-social-laravel-mysql-1
+
+```
+
+
+# PART-3
+
+```bash
+
+composer require spatie/laravel-sluggable
 
 ```
