@@ -84,6 +84,10 @@ DB_HOST=codeholic-social-laravel-mysql-1
 
 ```
 
+# CLONANDO REPOSITARIO DE GIT
+
+[laravel-sail-after-cloning-from-git-repository](https://stackoverflow.com/questions/71025461/laravel-sail-after-cloning-from-git-repository)
+[laravel-docker-the-stream-or-file-var-www-html-storage-logs-laravel-log-co](https://stackoverflow.com/questions/50552970/laravel-docker-the-stream-or-file-var-www-html-storage-logs-laravel-log-co)
 
 # PART-3
 
