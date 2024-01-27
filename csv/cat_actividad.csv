@@ -1,0 +1,363 @@
+id_actividad,clave,actividad,tipo,padre,actividad_activo
+9,AC01,Atención Psicológica,Atención ciudadana,NULL,1
+21,PS01.2,Conferencias,,1,1
+1,PS01,Estatal,Programas sociales,NULL,1
+2,PS02,Transversalidad,Programas sociales,NULL,1
+8,PS01.1,Talleres,,1,1
+3,PS03,PAIMEF,Programas sociales,NULL,1
+10,AC02,Estudios socioeconómicos,Atención ciudadana,NULL,1
+12,AC03,Gestión Social,Atención ciudadana,NULL,1
+13,AC04,Asesoría legal,Atención ciudadana,NULL,1
+14,AC06,Acompañamiento legal,Atención ciudadana,NULL,1
+15,AC07,Llamadas de seguimiento de folios turnados por ALVI,Atención ciudadana,NULL,1
+16,AC08,Mujeres referidas,Atención ciudadana,NULL,1
+17,AC09,Visitas domiciliarias,Atención ciudadana,NULL,1
+18,AC10,Alta de atención psicológica a beneficiaria,Atención ciudadana,NULL,1
+19,AC11,Llamadas de orientación e información de los servicios,Atención ciudadana,NULL,1
+20,AC12,Personas que acuden por otros motivos,Atención ciudadana,NULL,1
+22,PS01.3,Pláticas,,1,1
+23,PS02.1,Talleres,,2,1
+24,PS02.2,Conferencias,,2,1
+25,PS02.3,Pláticas,,2,1
+26,PS02.4,Seminarios,,2,1
+27,PS02.5,Foros,,2,1
+28,PS02.6,Cursos,,2,1
+29,PS02.7,Diplomados,,2,1
+30,PS02.8,Mesas de trabajo,,2,1
+31,PS03.1,Talleres,,3,1
+32,PS03.2,Conferencias,,3,1
+33,PS03.3,Pláticas,,3,1
+34,PS03.4,Actividades Lúdicas,,3,1
+35,PS04,Asesoría a Municipios,Programas sociales,NULL,0
+36,PS05,Capacitar a enlaces sobre perspectiva de genero,Programas sociales,NULL,0
+37,PS06,Asesorías a personas de cultura institucional con perspectiva de genero ,Programas sociales,NULL,0
+38,PS07,PAIMEF Itinerante,Programas sociales,NULL,1
+39,PS05.1,Talleres,,36,1
+40,PS05.2,Sesiones,,36,1
+41,PS07.1,Talleres,,38,1
+42,PS07.2,Conferencias,,38,1
+43,PS07.3,Pláticas,,38,1
+44,AC01.1,Primera Vez,,9,1
+45,AC01.2,Subsecuente,,9,1
+46,AC01.3,Intervención en crisis,,9,1
+47,AC02.1,Mujeres mayores de edad con hijos,,10,1
+48,AC02.2,Mujeres mayores de edad sin hijos,,10,1
+49,AC03.1,Proyectos productivos,,12,1
+50,AC03.2,Proyectos productivos - Soy Pilar,,12,1
+51,AC03.3,Actas de Matrimonio,,12,1
+52,AC04.1,Primera Vez,,13,1
+53,AC04.2,Subsecuente,,13,1
+54,AC07.1,Asesoría legal telefónica,,15,1
+55,AC07.2,Asesoría telefónica por trabajo social,,15,1
+56,AC08.1,Mujeres referidas a refugios,,16,1
+58,AC05,Asesorías legales telefónicas,Atención ciudadana,NULL,1
+61,AC03.19,Bolsa de Trabajo,,12,1
+62,AC03.4,Actas de Defunción,,12,1
+63,AC03.5,Actas de Nacimiento,,12,1
+64,AC12.1,Mujeres,,20,1
+65,AC12.2,Hombres,,20,1
+66,AC10.1,Mujeres,,18,1
+69,AC05.1,Primera vez,,58,1
+98,AC05.2,Subsecuente,,58,1
+70,AC13,Atención psicológica telefónica,Atención ciudadana,NULL,1
+71,AC14,Llamadas de seguimiento C5 - 911,Atención ciudadana,NULL,1
+72,AC15,Atención por trabajo social,Atención ciudadana,NULL,1
+73,AC16,Atención por coordinadora,Atención ciudadana,NULL,1
+74,PS08,Ingreso propio,Programas sociales,NULL,1
+75,PS09,Dirección de Derechos,Programas sociales,NULL,1
+76,PS10,Dirección de Atención Ciudadana,Programas sociales,NULL,1
+77,PS11,Coordinación de AVGM,Programas sociales,NULL,1
+78,AC02.3,Hombres menores de edad,,10,1
+80,AC02.4,Mujeres menores de edad sin hijos,,10,1
+81,AC02.5,Mujeres menores de edad con hijos,,10,1
+82,AC03.6,Actas de Divorcio,,12,1
+83,AC03.7,Actas de Inexistencia,,12,1
+84,AC03.8,Apoyo emergente por traslado - PAIMEF,,12,1
+85,AC03.9,Apoyo emergente por ropa,,12,1
+86,AC03.10,Apoyo emergente alimenticio,,12,1
+87,AC03.11,Apoyo con artículos ortopédicos,,12,1
+88,AC03.12,Bolsa de Trabajo,,0,1
+89,AC03.12,Inscripción den Mujer Jefa de Familia,,12,1
+90,AC03.13,Inscripción en Seguro Popular,,0,1
+91,AC03.13,Inscripción en Seguro Popular,,12,1
+92,AC03.14,Inscripción en INSABI,,12,1
+93,AC03.15,Beca en UNID,,12,1
+94,AC03.16,Beca en ICATSON,,12,1
+95,AC03.17,Beca en CECATY,,12,1
+96,AC03.18,Beca en IBEES para hij@s menores de edad,,12,1
+97,AC03.20,Otras gestiones,,12,1
+99,AC07.3,Atención psicológica telefónica,,15,1
+100,AC06.1,Primera vez,,14,1
+101,AC06.2,Subsecuente,,14,1
+102,AC09.1,Primera vez,,17,1
+103,AC09.2,Subsecuente,,17,1
+104,AC14.1,Primera vez,,71,1
+105,AC14.2,Subsecuente,,71,1
+106,AC02.6,Otras gestiones,,10,1
+107,AC13.1,Primera vez,,70,1
+108,AC13.2,Subsecuente,,70,1
+109,AC13.3,Intervención en crisis,,70,1
+110,AC16.1,Primera vez,,73,1
+111,AC16.2,Subsecuente,,73,1
+112,AC16.3,Otras gestiones,,73,1
+113,AC16.4,Intervención en crisis por coordinadora regional,,73,1
+114,AC11.1,Primera vez,,19,1
+115,AC11.2,Subsecuente,,19,1
+116,AC01.1.1,Primera Vez Mujeres de 0 a 14 años de edad,,9,1
+117,AC01.1.2,Primera Vez Mujeres de 15 a 17 años de edad,,9,1
+118,AC01.1.3,Primera Vez Mujeres de 18 a 24 años de edad,,9,1
+119,AC01.1.4,Primera Vez Mujeres de 25 a 29 años de edad,,9,1
+120,AC01.1.5,Primera Vez Mujeres de 30 a 34 años de edad,,9,1
+121,AC01.1.6,Primera Vez Mujeres de 35 a 39 años de edad,,9,1
+122,AC01.1.7,Primera Vez Mujeres de 40 a 44 años de edad,,9,1
+123,AC01.1.8,Primera Vez Mujeres de 45 a 49 años de edad,,9,1
+124,AC01.1.9,Primera Vez Mujeres de 50 a 54 años de edad,,9,1
+125,AC01.1.10,Primera Vez Mujeres de 55 a 59 años de edad,,9,1
+126,AC01.1.11,Primera Vez Mujeres de 60 años de edad o más,,9,1
+127,AC01.1.12,Primera Vez Hijas de 0 a 7 años de edad,,9,1
+128,AC01.1.13,Primera Vez Hijas de 8 a 14 años de edad,,9,1
+129,AC01.1.14,Primera Vez Hijas de 15 a 17 años de edad,,9,1
+130,AC01.1.15,Primera Vez Hijos de 0 a 7 años de edad,,9,1
+131,AC01.1.16,Primera Vez Hijos de 8 a 14 años de edad,,9,1
+132,AC01.1.17,Primera Vez Hijos de 15 a 17 años de edad,,9,1
+133,AC01.1.18,Primera Vez Hombres de 15 a 17 años de edad,,9,1
+134,AC01.1.19,Primera Vez Hombres de 18 a 24 años de edad,,9,1
+135,AC01.1.20,Primera Vez Hombres de 25 a 29 años de edad,,9,1
+136,AC01.1.21,Primera Vez Hombres de 30 a 34 años de edad,,9,1
+137,AC01.1.22,Primera Vez Hombres de 35 a 39 años de edad,,9,1
+138,AC01.1.23,Primera Vez Hombres de 40 a 44 años de edad,,9,1
+139,AC01.1.24,Primera Vez Hombres de 45 a 49 años de edad,,9,1
+140,AC01.1.25,Primera Vez Hombres de 50 a 54 años de edad,,9,1
+141,AC01.1.26,Primera Vez Hombres de 55 a 59 años de edad,,9,1
+142,AC01.1.27,Primera Vez Hombres de 60 años de edad o más,,9,1
+143,AC01.2.1,Subsecuente Mujeres de 0 a 14 años de edad,,9,1
+144,AC01.2.2,Subsecuente Mujeres de 15 a 17 años de edad,,9,1
+145,AC01.2.3,Subsecuente Mujeres de 18 a 24 años de edad,,9,1
+146,AC01.2.4,Subsecuente Mujeres de 25 a 29 años de edad,,9,1
+147,AC01.2.5,Subsecuente Mujeres de 30 a 34 años de edad,,9,1
+148,AC01.2.6,Subsecuente Mujeres de 35 a 39 años de edad,,9,1
+149,AC01.2.7,Subsecuente Mujeres de 40 a 44 años de edad,,9,1
+150,AC01.2.8,Subsecuente Mujeres de 45 a 49 años de edad,,9,1
+151,AC01.2.9,Subsecuente Mujeres de 50 a 54 años de edad,,9,1
+152,AC01.2.10,Subsecuente Mujeres de 55 a 59 años de edad,,9,1
+153,AC01.2.11,Subsecuente Mujeres de 60 años de edad o más,,9,1
+154,AC01.2.12,Subsecuente Hijas de 0 a 7 años de edad,,9,1
+155,AC01.2.13,Subsecuente Hijas de 8 a 14 años de edad,,9,1
+156,AC01.2.14,Subsecuente Hijas de 15 a 17 años de edad,,9,1
+157,AC01.2.15,Subsecuente Hijos de 0 a 7 años de edad,,9,1
+158,AC01.2.16,Subsecuente Hijos de 8 a 14 años de edad,,9,1
+159,AC01.2.17,Subsecuente Hijos de 15 a 17 años de edad,,9,1
+160,AC01.2.18,Subsecuente Hombres de 15 a 17 años de edad,,9,1
+161,AC01.2.19,Subsecuente Hombres de 18 a 24 años de edad,,9,1
+162,AC01.2.20,Subsecuente Hombres de 25 a 29 años de edad,,9,1
+163,AC01.2.21,Subsecuente Hombres de 30 a 34 años de edad,,9,1
+164,AC01.2.22,Subsecuente Hombres de 35 a 39 años de edad,,9,1
+165,AC01.2.23,Subsecuente Hombres de 40 a 44 años de edad,,9,1
+166,AC01.2.24,Subsecuente Hombres de 45 a 49 años de edad,,9,1
+167,AC01.2.25,Subsecuente Hombres de 50 a 54 años de edad,,0,1
+168,AC01.2.25,Subsecuente Hombres de 50 a 54 años de edad,,9,1
+169,AC01.2.26,Subsecuente Hombres de 55 a 59 años de edad,,9,1
+170,AC01.2.27,Subsecuente Hombres de 60 años de edad o más,,9,1
+171,AC01.3.1,Intervención en crisis Mujeres de 0 a 14 años de edad,,9,1
+172,AC01.3.2,Intervención en crisis Mujeres de 15 a 17 años de edad,,9,1
+173,AC01.3.3,Intervención en crisis Mujeres de 18 a 24 años de edad,,9,1
+174,AC01.3.4,Intervención en crisis Mujeres de 25 a 29 años de edad,,9,1
+175,AC01.3.5,Intervención en crisis Mujeres de 30 a 34 años de edad,,0,1
+176,AC01.3.6,Intervención en crisis Mujeres de 35 a 39 años de edad,,9,1
+177,AC01.3.7,Intervención en crisis Mujeres de 40 a 44 años de edad,,9,1
+178,AC01.3.8,Intervención en crisis Mujeres de 45 a 49 años de edad,,9,1
+179,AC01.3.9,Intervención en crisis Mujeres de 50 a 54 años de edad,,9,1
+180,AC01.3.10,Intervención en crisis Mujeres de 55 a 59 años de edad,,9,1
+181,AC01.3.11,Intervención en crisis Mujeres de 60 años de edad o más,,9,1
+182,AC01.3.12,Intervención en crisis Hijas de 0 a 7 años de edad,,9,1
+183,AC01.3.13,Intervención en crisis Hijas de 8 a 14 años de edad,,9,1
+184,AC01.3.14,Intervención en crisis Hijas de 15 a 17 años de edad,,9,1
+185,AC01.3.15,Intervención en crisis Hijos de 0 a 7 años de edad,,9,1
+186,AC01.3.16,Intervención en crisis Hijos de 8 a 14 años de edad,,9,1
+187,AC01.3.17,Intervención en crisis Hijos de 15 a 17 años de edad,,9,1
+188,AC01.3.18,Intervención en crisisHombres de 15 a 17 años de edad,,9,1
+189,AC01.3.19,Intervención en crisis Hombres de 18 a 24 años de edad,,9,1
+190,AC01.3.20,Intervención en crisis Hombres de 25 a 29 años de edad,,9,1
+191,AC01.3.21,Intervención en crisis Hombres de 30 a 34 años de edad,,9,1
+192,AC01.3.22,Intervención en crisis Hombres de 35 a 39 años de edad,,9,1
+193,AC01.3.23,Intervención en crisis Hombres de 40 a 44 años de edad,,9,1
+194,AC01.3.24,Intervención en crisis Hombres de 45 a 49 años de edad,,9,1
+195,AC01.3.25,Intervención en crisis Hombres de 50 a 54 años de edad,,9,1
+196,AC01.3.26,Intervención en crisis Hombres de 55 a 59 años de edad,,9,1
+197,AC01.3.27,Intervención en crisis Hombres de 60 años de edad o más,,9,1
+198,AC03.1.1,Proyectos productivos - Primera vez,,12,1
+199,AC03.1.2,Proyectos productivos - Tramite en Proceso,,12,1
+200,AC03.1.3,Proyectos productivos - Termino de la gestión,,12,1
+201,AC03.2.1,Proyectos productivos - Soy Pilar - Primera vez,,12,1
+202,AC03.2.2,Proyectos productivos - Soy Pilar - Tramite en Proceso,,12,1
+203,AC03.2.3,Proyectos productivos - Soy Pilar - Termino de la gestión,,12,1
+204,AC03.3.1,Actas de Matrimonio - Primera vez,,12,1
+205,AC03.3.2,Actas de Matrimonio - Tramite en Proceso,,12,1
+206,AC03.3.3,Actas de Matrimonio - Termino de la gestión,,12,1
+207,AC03.4.1,Actas de Defunción - Primera vez,,12,1
+208,AC03.4.2,Actas de Defunción - Tramite en Proceso,,12,1
+209,AC03.4.3,Actas de Defunción - Termino de la gestión,,12,1
+210,AC03.5.1,Actas de Nacimiento - Primera vez,,12,1
+211,AC03.5.2,Actas de Nacimiento - Tramite en Proceso,,12,1
+212,AC03.5.3,Actas de Nacimiento - Termino de la gestión,,12,1
+213,AC03.6.1,Actas de Divorcio - Primera vez,,12,1
+214,AC03.6.2,Actas de Divorcio - Tramite en Proceso,,12,1
+215,AC03.6.3,Actas de Divorcio - Termino de la gestión,,12,1
+216,AC03.7.1,Actas de Inexistencia - Primera vez,,12,1
+217,AC03.7.2,Actas de Inexistencia - Tramite en Proceso,,12,1
+218,AC03.7.3,Actas de Inexistencia - Termino de la gestión,,12,1
+219,AC03.8.1,Apoyo emergente por traslado - PAIMEF - Primera vez,,12,1
+220,AC03.8.2,Apoyo emergente por traslado - PAIMEF - Tramite en Proceso,,12,1
+221,AC03.8.3,Apoyo emergente por traslado - PAIMEF - Termino de la gestión,,12,1
+222,AC03.9.1,Apoyo emergente por ropa - Primera vez,,12,1
+223,AC03.9.2,Apoyo emergente por ropa - Tramite en Proceso,,12,1
+224,AC03.9.3,Apoyo emergente por ropa - Termino de la gestión,,12,1
+225,AC03.10.1,Apoyo emergente alimenticio - Primera vez,,12,1
+226,AC03.10.2,Apoyo emergente alimenticio - Tramite en Proceso,,12,1
+227,AC03.10.3,Apoyo emergente alimenticio - Termino de la gestión,,12,1
+228,AC03.11.1,Apoyo con artículos ortopédicos - Primera vez,,12,1
+229,AC03.11.2,Apoyo con artículos ortopédicos - Tramite en Proceso,,12,1
+230,AC03.11.3,Apoyo con artículos ortopédicos - Termino de la gestión,,12,1
+231,AC03.12.1,Inscripción de  Mujer Jefa de Familia - Primera vez,,12,1
+232,AC03.12.2,Inscripción de  Mujer Jefa de Familia - Tramite en Proceso,,12,1
+233,AC03.12.3,Inscripción de  Mujer Jefa de Familia - Termino de la gestión,,12,1
+234,AC03.13.1,Inscripción en Seguro Popular - Primera vez,,12,1
+235,AC03.13.2,Inscripción en Seguro Popular - Tramite en Proceso,,12,1
+236,AC03.13.3,Inscripción en Seguro Popular - Termino de la gestión,,12,1
+237,AC03.14.1,Inscripción en INSABI - Primera vez,,12,1
+238,AC03.14.2,Inscripción en INSABI - Tramite en Proceso,,12,1
+239,AC03.14.3,Inscripción en INSABI - Termino de la gestión,,12,1
+240,AC03.15.1,Beca en UNID - Primera vez,,12,1
+241,AC03.15.2,Beca en UNID - Tramite en Proceso,,12,1
+242,AC03.15.3,Beca en UNID - Termino de la gestión,,12,1
+243,AC03.16.1,Beca en ICATSON - Primera vez,,12,1
+244,AC03.16.2,Beca en ICATSON - Tramite en Proceso,,12,1
+245,AC03.16.3,Beca en ICATSON - Termino de la gestión,,12,1
+246,AC03.17.1,Beca en CECATY - Primera vez,,12,1
+247,AC03.17.2,Beca en CECATY - Tramite en Proceso,,12,1
+248,AC03.17.3,Beca en CECATY - Termino de la gestión,,12,1
+249,AC03.18.1,Beca en IBEES para hij@s menores de edad - Primera vez,,12,1
+250,AC03.18.2,Beca en IBEES para hij@s menores de edad - Tramite en Proceso,,12,1
+251,AC03.18.3,Beca en IBEES para hij@s menores de edad - Termino de la gestión,,12,1
+252,AC03.19.1,Bolsa de Trabajo - Primera vez,,12,1
+253,AC03.19.2,Bolsa de Trabajo - Tramite en Proceso,,12,1
+254,AC03.19.3,Bolsa de Trabajo - Termino de la gestión,,12,1
+255,AC03.20.1,Otras gestiones - Primera vez,,12,1
+256,AC03.20.2,Otras gestiones - Tramite en Proceso,,12,1
+257,AC03.20.3,Otras gestiones - Termino de la gestión,,12,1
+258,AC16.5,Recepción de llamadas telefónicas,,73,1
+259,AC16.6,Subsecuente telefónica,,73,1
+260,AC16.7,Otras gestiones telefónica,,73,1
+261,AC16.8,Intervención en crisis por coordinadora regional telefónica,,73,1
+262,AC02.7,Hombres mayores de edad con hijos/hijas,,10,1
+263,AC02.8,Hombres mayores de edad sin hijos/hijas,,10,1
+264,AC02.9,Hombres menores de edad con hijos/hijas,,10,1
+265,AC04.1.1,Primera Vez Mujeres de 0 a 14 años de edad,,13,1
+266,AC04.1.2,Primera Vez Mujeres de 15 a 17 años de edad,,13,1
+267,AC04.1.3,Primera Vez Mujeres de 18 a 24 años de edad,,13,1
+268,AC04.1.4,Primera Vez Mujeres de 25 a 29 años de edad,,13,1
+269,AC04.1.5,Primera Vez Mujeres de 30 a 34 años de edad,,13,1
+270,AC04.1.6,Primera Vez Mujeres de 35 a 39 años de edad,,13,1
+271,AC04.1.7,Primera Vez Mujeres de 40 a 44 años de edad,,13,1
+272,AC04.1.8,Primera Vez Mujeres de 45 a 49 años de edad,,13,1
+273,AC04.1.9,Primera Vez Mujeres de 50 a 54 años de edad,,13,1
+274,AC04.1.10,Primera Vez Mujeres de 55 a 59 años de edad,,13,1
+275,AC04.1.11,Primera Vez Mujeres de 60 años de edad o más,,13,1
+276,AC04.1.12,Primera Vez Hijas de 0 a 7 años de edad,,13,1
+277,AC04.1.13,Primera Vez Hijas de 8 a 14 años de edad,,13,1
+278,AC04.1.14,Primera Vez Hijas de 15 a 17 años de edad,,13,1
+279,AC01.1.15,Primera Vez Hijos de 0 a 7 años de edad,,13,1
+280,AC04.1.16,Primera Vez Hijos de 8 a 14 años de edad,,13,1
+281,AC04.1.17,Primera Vez Hijos de 15 a 17 años de edad,,13,1
+282,AC04.1.18,Primera Vez Hombres de 15 a 17 años de edad,,13,1
+283,AC04.1.19,Primera Vez Hombres de 18 a 24 años de edad,,13,1
+284,AC04.1.20,Primera Vez Hombres de 25 a 29 años de edad,,13,1
+285,AC04.1.21,Primera Vez Hombres de 30 a 34 años de edad,,13,1
+286,AC04.1.22,Primera Vez Hombres de 35 a 39 años de edad,,13,1
+287,AC04.1.23,Primera Vez Hombres de 40 a 44 años de edad,,13,1
+288,AC04.1.24,Primera Vez Hombres de 45 a 49 años de edad,,13,1
+289,AC04.1.25,Primera Vez Hombres de 50 a 54 años de edad,,13,1
+290,AC04.1.26,Primera Vez Hombres de 55 a 59 años de edad,,13,1
+291,AC04.1.27,Primera Vez Hombres de 60 años de edad o más,,13,1
+292,AC04.2.1,Subsecuente Mujeres de 0 a 14 años de edad,,13,1
+293,AC04.2.2,Subsecuente Mujeres de 15 a 17 años de edad,,13,1
+294,AC04.2.3,Subsecuente Mujeres de 18 a 24 años de edad,,13,1
+295,AC04.2.4,Subsecuente Mujeres de 25 a 29 años de edad,,13,1
+296,AC04.2.5,Subsecuente Mujeres de 30 a 34 años de edad,,13,1
+297,AC04.2.6,Subsecuente Mujeres de 35 a 39 años de edad,,13,1
+298,AC04.2.7,Subsecuente Mujeres de 40 a 44 años de edad,,13,1
+299,AC04.2.8,Subsecuente Mujeres de 45 a 49 años de edad,,13,1
+300,AC04.2.9,Subsecuente Mujeres de 50 a 54 años de edad,,13,1
+301,AC04.2.10,Subsecuente Mujeres de 55 a 59 años de edad,,13,1
+302,AC04.2.11,Subsecuente Mujeres de 60 años de edad o más,,13,1
+303,AC04.2.12,Subsecuente Hijas de 0 a 7 años de edad,,13,1
+304,AC04.2.13,Subsecuente Hijas de 8 a 14 años de edad,,13,1
+305,AC04.2.14,Subsecuente Hijas de 15 a 17 años de edad,,0,1
+306,AC04.2.14,Subsecuente Hijas de 15 a 17 años de edad,,13,1
+307,AC04.2.15,Subsecuente Hijos de 0 a 7 años de edad,,13,1
+308,AC04.2.16,Subsecuente Hijos de 8 a 14 años de edad,,13,1
+309,AC04.2.17,Subsecuente Hijos de 15 a 17 años de edad,,13,1
+310,AC04.2.18,Subsecuente Hombres de 15 a 17 años de edad,,13,1
+311,AC04.2.19,19-SubsecuenteHombres de 18 a 24 años de edad,,13,1
+312,AC04.2.20,Subsecuente Hombres de 25 a 29 años de edad,,13,1
+313,AC04.2.21,Subsecuente Hombres de 30 a 34 años de edad,,13,1
+314,AC04.2.22,Subsecuente Hombres de 35 a 39 años de edad,,13,1
+315,AC04.2.23,Subsecuente Hombres de 40 a 44 años de edad,,13,1
+316,AC04.2.24,SubsecuenteHombres de 45 a 49 años de edad,,13,1
+317,AC04.2.25,Subsecuente Hombres de 50 a 54 años de edad,,13,1
+318,AC04.2.26,Subsecuente Hombres de 55 a 59 años de edad,,13,1
+319,AC04.2.27,Subsecuente Hombres de 60 años de edad o más,,13,1
+320,AC05.1.1,Primera Vez Mujeres de 0 a 14 años de edad,,58,1
+321,AC05.1.2,Primera Vez Mujeres de 15 a 17 años de edad,,58,1
+322,AC05.1.3,Primera Vez Mujeres de 18 a 24 años de edad,,58,1
+323,AC05.1.4,Primera Vez Mujeres de 25 a 29 años de edad,,58,1
+324,AC05.1.5,Primera Vez Mujeres de 30 a 34 años de edad,,58,1
+325,AC05.1.6,Primera Vez Mujeres de 35 a 39 años de edad,,58,1
+326,AC05.1.7,Primera Vez Mujeres de 40 a 44 años de edad,,58,1
+327,AC05.1.8,Primera Vez Mujeres de 45 a 49 años de edad,,58,1
+328,AC05.1.9,Primera Vez Mujeres de 50 a 54 años de edad,,58,1
+329,AC05.1.10,Primera Vez Mujeres de 55 a 59 años de edad,,58,1
+330,AC05.1.11,Primera Vez Mujeres de 60 años de edad o más,,58,1
+331,AC05.1.12,Primera Vez Hijas de 0 a 7 años de edad,,58,1
+332,AC05.1.13,Primera Vez Hijas de 8 a 14 años de edad,,58,1
+333,AC05.1.14,Primera Vez Hijas de 15 a 17 años de edad,,58,1
+334,AC05.1.15,Primera Vez Hijos de 0 a 7 años de edad,,58,1
+335,AC05.1.16,Primera Vez Hijos de 8 a 14 años de edad,,58,1
+336,AC05.1.17,Primera Vez Hijos de 15 a 17 años de edad,,58,1
+337,AC05.1.18,Primera Vez Hombres de 15 a 17 años de edad,,58,1
+338,AC05.1.19,Primera Vez Hombres de 18 a 24 años de edad,,58,1
+339,AC05.1.20,Primera Vez Hombres de 25 a 29 años de edad,,58,1
+340,AC05.1.21,Primera Vez Hombres de 30 a 34 años de edad,,58,1
+341,AC05.1.22,Primera Vez Hombres de 35 a 39 años de edad,,58,1
+342,AC05.1.23,Primera Vez Hombres de 40 a 44 años de edad,,58,1
+343,AC05.1.24,Primera Vez Hombres de 45 a 49 años de edad,,58,1
+344,AC05.1.25,Primera Vez Hombres de 50 a 54 años de edad,,58,1
+345,AC05.1.26,Primera Vez Hombres de 55 a 59 años de edad,,58,1
+346,AC05.1.27,Primera Vez Hombres de 60 años de edad o más,,58,1
+347,AC05.2.1,Subsecuente Mujeres de 0 a 14 años de edad,,58,1
+348,AC05.2.2,Subsecuente Mujeres de 15 a 17 años de edad,,58,1
+349,AC05.2.3,Subsecuente Mujeres de 18 a 24 años de edad,,58,1
+350,AC05.2.4,Subsecuente Mujeres de 25 a 29 años de edad,,58,1
+351,AC05.2.5,Subsecuente Mujeres de 30 a 34 años de edad,,58,1
+352,AC05.2.6,Subsecuente Mujeres de 35 a 39 años de edad,,58,1
+353,AC05.2.7,Subsecuente Mujeres de 40 a 44 años de edad,,58,1
+354,AC05.2.8,Subsecuente Mujeres de 45 a 49 años de edad,,58,1
+355,AC05.2.9,Subsecuente Mujeres de 50 a 54 años de edad,,58,1
+356,AC05.2.10,Subsecuente Mujeres de 55 a 59 años de edad,,58,1
+357,AC05.2.11,Subsecuente Mujeres de 60 años de edad o más,,58,1
+358,AC05.2.12,Subsecuente Hijas de 0 a 7 años de edad,,58,1
+359,AC05.2.13,Subsecuente Hijas de 8 a 14 años de edad,,58,1
+360,AC05.2.14,Subsecuente Hijas de 15 a 17 años de edad,,58,1
+361,AC05.2.15,Subsecuente Hijos de 0 a 7 años de edad,,58,1
+362,AC05.2.16,Subsecuente Hijos de 8 a 14 años de edad,,58,1
+363,AC05.2.17,Subsecuente Hijos de 15 a 17 años de edad,,58,1
+364,AC05.2.18,Subsecuente Hombres de 15 a 17 años de edad,,58,1
+365,AC05.2.19,Subsecuente Hombres de 18 a 24 años de edad,,58,1
+366,AC05.2.20,Subsecuente Hombres de 25 a 29 años de edad,,58,1
+367,AC05.2.21,Subsecuente Hombres de 30 a 34 años de edad,,58,1
+368,AC05.2.22,Subsecuente Hombres de 35 a 39 años de edad,,58,1
+369,AC05.2.23,Subsecuente Hombres de 40 a 44 años de edad,,58,1
+370,AC05.2.24,Subsecuente Hombres de 45 a 49 años de edad,,58,1
+371,AC05.2.25,Subsecuente Hombres de 50 a 54 años de edad,,58,1
+372,AC05.2.26,Subsecuente Hombres de 55 a 59 años de edad,,58,1
+373,AC05.2.27,Subsecuente Hombres de 60 años de edad o más,,58,1

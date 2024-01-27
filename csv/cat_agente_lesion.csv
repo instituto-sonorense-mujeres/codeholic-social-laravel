@@ -1,0 +1,9 @@
+id_agente_lesion,agente_lesion,agente_lesion_activo
+1,Arma contundente (palo, la clava, la maza, el azote, garrotes, macanas, piedras, bates de béisbol, etc.),1
+2,Arma de fuego,1
+3,Arma punzocortante,1
+4,Golpes,1
+5,Partes del cuerpo,1
+6,Quemaduras,1
+7,Otro,1
+8,Ninguna,1
