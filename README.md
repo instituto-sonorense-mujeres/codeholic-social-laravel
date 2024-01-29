@@ -96,3 +96,12 @@ DB_HOST=codeholic-social-laravel-mysql-1
 composer require spatie/laravel-sluggable
 
 ```
+
+# PART-4
+
+```bash
+
+php artisan make:controller HomeController
+
+
+```
