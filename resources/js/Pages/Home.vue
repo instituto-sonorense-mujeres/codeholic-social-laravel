@@ -1,6 +1,11 @@
 <script setup>
+import CreatePost from '@/Components/app/CreatePost.vue';
+import FollowingList from '@/Components/app/FollowingList.vue';
+import GroupList from '@/Components/app/GroupList.vue';
+import PostList from '@/Components/app/PostList.vue';
 import { Head, Link } from '@inertiajs/vue3';
-import GroupItem from '@/Components/app/GroupItem.vue';
+PostList
+
 
 defineProps({
     canLogin: {
@@ -20,44 +25,21 @@ defineProps({
 });
 </script>
 
-<template>
-    
+<template>    
     <Head title="Codeholic Social Media" />
 
-    <div class="grid grid-cols-12 gap-3">
-        <div class="col-span-3 bg-sky-100 py-6 px-3">
-            <h2 class="text-2xl font-bold">Mis Grupos</h2>
-
-            <div class="py-8">
-                <div v-if="false" class="text-grey-400 flex text-center">
-                    No estas en ningun Grupo
-                </div>
-                
-    
-                <div v-else>
-                    <GroupItem
-                        image="https://picsum.photos/100"
-                        title="Laravel Developers"
-                        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis recusandae iusto reprehenderit odit aspernatur, nobis atque eligendi vel laboriosam doloribus laborum omnis voluptate, repudiandae expedita earum consectetur temporibus perspiciatis"
-                    /> 
-                    <GroupItem
-                        image="https://picsum.photos/100"
-                        title="Vuejs Developers"
-                        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis recusandae iusto reprehenderit odit aspernatur, nobis atque eligendi vel laboriosam doloribus laborum omnis voluptate, repudiandae expedita earum consectetur temporibus perspiciatis"
-                    />
-                </div>
-            </div>
-
+    <div class="grid lg:grid-cols-12 gap-3 p-4 h-full">
+        <div class="col-span-3 py-6">
+            <GroupList/>
         </div>
-        <div class="col-span-6">
-            Post
+        <div class="col-span-6 py-6">
+            <CreatePost/>
+            <PostList/>
         </div>
-        <div class="col-span-3">
-            Followers
+        <div class="col-span-3 py-6">
+            <FollowingList/>
         </div>
     </div>
-
-
 </template>
 
 <style>
