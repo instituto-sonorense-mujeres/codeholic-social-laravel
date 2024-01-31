@@ -74,7 +74,7 @@ rm -rf node_modules
 
 # cambiar permisos linux
 chmod -R 777 /var/www/html/
-chown -R 777 www-data:www-data *
+chown -R www-data:www-data *
 
 # mysql container debug
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 1c8a0e4dc5d6
