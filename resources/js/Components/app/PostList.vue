@@ -7,7 +7,18 @@ const post1 = {
     name: 'John Smith'
   },
   body: `
-    <p>Lorem Ipsum</p>
+    <p>John Smith says something</p>
+  `,
+  created_at: '2023-11-19 15:12'
+}
+const post2 = {
+  user: {
+    id: 2,
+    avatar: 'https://randomuser.me/api/portraits/men/9.jpg',
+    name: 'Joseph Smith'
+  },
+  body: `
+    <p>Joseph Smith says something</p>
   `,
   created_at: '2023-11-19 15:12'
 }
@@ -17,7 +28,7 @@ const post1 = {
 <template>
   <div>
     <PostItem :post="post1"/>
-    <PostItem :post="post1"/>
+    <PostItem :post="post2"/>
   </div>
 </template>
 
