@@ -1,0 +1,9 @@
+id_modalidad,clave,modalidad,modalidad_activo
+1,M01,Violencia Familiar,1
+2,M02,Violencia Laboral,1
+3,M03,Violencia Docente,1
+4,M04,Violencia Institucional,1
+5,M05,Violencia Feminicida,1
+6,M06,Violencia en la Comunidad,1
+7,M07,Violencia Obstétrica,1
+8,M08,Otros motivos de atención no relacionados con violencia,1

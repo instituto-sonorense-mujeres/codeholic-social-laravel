@@ -1,0 +1,8 @@
+id_servicio_medico,servicio_medico,servicio_medico_activo
+1,Ninguno,1
+2,Seguro social IMSS,1
+3,Seguro Popular o INSABI,1
+4,ISSSTESON,1
+5,ISSSTE,1
+6,Seguro de gastos médicos mayores,1
+7,Otro,1

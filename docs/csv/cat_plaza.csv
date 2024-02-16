@@ -1,0 +1,35 @@
+id_plaza,plaza,padre,id_municipio,plaza_activo,prefijo
+549,CDM Caborca,,17,1,CDMCA
+550,CDM Santa Ana,,58,1,CDMSA
+551,CDM Huatabampo,,33,1,CDMHU
+552,CDM Ures,,66,1,CDMUR
+553,CDM Moctezuma,,38,1,CDMMO
+554,CDM Etchojoa,,26,1,CDMET
+555,CDM Magdalena,,36,1,CDMMA
+556,CDM Empalme,,25,1,CDMEM
+557,Coordinación Regional Hermosillo,,30,1,CRHER
+558,CDM Pueblo  Yaqui,,18,1,CDMPY
+584,Coordinación Regional de Magdalena,,36,1,CRMAG
+560,Coordinación Regional Poblado  Miguel Alemán,,30,1,CRPMA
+582,Itinerantes - Sector Salud,,18,1,ITISS
+563,Comisión Comunidades Yaquis,,18,1,COMYA
+565,Coordinación Regional  Nogales,,43,1,CRNOG
+566,Coordinación Regional San Luis Río Colorado,,55,1,CRSLR
+567,Coordinación Regional Guaymas,,29,1,CRGUA
+575,Unidad Movil Región Centro y Sierra ,,30,1,UMCS
+568,Coordinación Regional Cajeme,,18,1,CRCAJ
+569,Comisión en CJM Cajeme,,18,1,CJMC
+570,Comisión en VICEFISCALÍA,,18,1,VICEF
+572,Coordinación Regional Navojoa,,42,1,CRNAV
+574,Unidad Móvil Región Sur,,42,1,UMS
+576,Coordinación Regional Caborca,,17,1,CRCAB
+577,Unidad  Móvil Centro-Sierra-Rio Sonora,,30,1,UMCSR
+578,Comisión en CJM Hermosillo,,30,1,CJMH
+579,Comisión Vicefiscalía FDRG - HILLO,,30,1,VIHER
+580,Comisión Vicefiscalía FDRG - Cajeme,,18,1,VICAJ
+581,Unidad Empalme,,25,1,UNEMP
+583,Itinerantes - Hermosillo,,30,1,ITHER
+585,Comisión Casa de la Mujer Indigena,,42,1,CMINA
+586,CDM Agua Prieta,,2,1,CDMAP
+587,CDM Cananea,,19,1,CDMCA
+588,CDM Guaymas,,29,1,CDMGU

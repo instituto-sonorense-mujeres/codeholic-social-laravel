@@ -1,0 +1,22 @@
+id_efecto_fisico,efecto_fisico,efecto_fisico_activo
+1,Aborto,1
+2,Amputación/avulsión,1
+3,Cicatrices,1
+4,Congelamiento,1
+5,Contusión/hematoma,1
+6,Dolor de cabeza,1
+7,Fractura,1
+8,Herida,1
+9,Laceración/abrasión,1
+10,Luxación/esquince,1
+11,Muerte,1
+12,Quemadura/corrosión,1
+13,Ninguno,1
+14,Enuresis,1
+15,Ecopresis,1
+16,Lesiones en piel,1
+17,Lesiones Cervicales,1
+18,Lesiones Oseas,1
+19,Moretones,1
+20,Problemas Respiratorios,1
+21,Otro,1

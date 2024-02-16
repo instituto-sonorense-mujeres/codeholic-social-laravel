@@ -1,0 +1,25 @@
+id_efecto_psicologico,efecto_psicologico,efecto_psicologico_activo
+1,Angustia,1
+2,Trastorno Depresivo,1
+16,Trastornos adaptativos ,1
+5,Trastorno de estrés postraumático,1
+6,Ideación suicida,1
+7,Intento suicida,1
+8,Trastornos de la conducta alimentaria ,1
+9,Problemas de ansiedad sin diagnóstico,1
+10,Trastorno del Sueño,1
+11,Trastorno de Ansiedad,1
+12,Trastornos de la personalidad,1
+13,Episodio de Tristeza,1
+14,Ninguno,1
+15,Trastornos psicóticos ,1
+17,Trastornos del control de los impulsos ,1
+18,Trastornos sexuales y de la identidad sexual ,1
+19,Trastornos disociativos ,1
+20,Trastornos del estado de ánimo ,1
+21,Trastornos relacionados con sustancias ,1
+22,Trastornos mentales debidos a enfermedad médica ,1
+23,Trastornos cognoscitivos ,1
+24,Demencia,1
+25,Delirios auditivos o visuales ,1
+26,Otro,1

@@ -1,0 +1,10 @@
+id_estado_civil,estado_civil,estado_civil_activo
+1,Soltera(o),1
+2,Noviazgo,1
+3,Comprometida(o),1
+4,Casada(o),1
+5,Unión Libre,1
+6,Separada(o),1
+7,Divorciada(o),1
+8,Viuda(o),1
+9,No específico,1

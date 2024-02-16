@@ -1,0 +1,12 @@
+id_preferencia,nombre,descripcion,valor
+1,elemento_pagina,Elementos a mostrar por pagina:,20
+2,vac_antiguedad_1,Días de vacaciones 1 Año Antiguedad:,6
+4,vac_antiguedad_2,Dí­as de vacaciones 2 Años Antiguedad:,8
+5,vac_antiguedad_3,Días de vacaciones 3 Años Antiguedad:,10
+6,vac_antiguedad_4,Dí­as de vacaciones 4 Años Antiguedad:,12
+7,vac_antiguedad_5,Dí­as de vacaciones 5 o más Años Antiguedad:,14
+8,vac_dias_traspaso,Máximo de días de traspaso de un año a otro:,4
+9,liq_salario_m,Salario Mí­nimo,54.80
+10,liq_prima_antiguedad,Dí­as de la prima de antiguedad,12
+11,liq_indemnizacion,Días por indemnización,20
+13,diasaguinaldo,Días por aguinaldo,15

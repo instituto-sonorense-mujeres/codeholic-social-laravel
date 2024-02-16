@@ -1,0 +1,20 @@
+id_ocupacion,ocupacion,ocupacion_activo
+1,Hogar,1
+2,Empleada(o) de Gobierno del Estado,1
+3,Empleada(o) de Gobierno Municipal,1
+4,Empleada(o) de Empresa Privada,1
+5,Estudiante,1
+6,Comerciante,1
+7,Venta de productos por catálogo,1
+8,Desempleada (o),1
+9,"Trabaja por su cuenta (taxista, uber, hace tortillas para vender, vende comida, etc.)",1
+10,Negocio propio,1
+11,Atiende Negocio Familiar,1
+12,Empleada(o) de Gobierno Federal ,1
+13,Empleada(o) del Sector Salud ,1
+14,Otro,1
+15,Ninguna,1
+16,Pensionada (o),1
+17,Jubilada (o),1
+18,Agricultor (a),1
+19,Jornalera (o),1

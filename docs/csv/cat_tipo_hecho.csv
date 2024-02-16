@@ -1,0 +1,14 @@
+id_tipo_hecho,tipo_hecho,tipo_hecho_activo
+1,Discriminación,1
+2,Acoso escolar (bullying),1
+3,Sexteo (sexting),1
+4,Abusos deshonestos,1
+5,Estupro,1
+6,Feminicidio,1
+7,Hostigamiento sexual,1
+8,Incumplimiento obligaciones familiares,1
+9,Pornografía infantil,1
+10,Trata de personas,1
+11,Violación,1
+12,Otro,1
+13,Ninguno,1

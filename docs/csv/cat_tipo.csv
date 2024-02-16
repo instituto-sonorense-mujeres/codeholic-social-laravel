@@ -1,0 +1,8 @@
+id_tipo,clave,tipo,tipo_activo
+1,T01,Violencia Física,1
+2,T02,Violencia Psicológica,1
+3,T03,Violencia Sexual,1
+4,T04,Violencia Patrimonial,1
+5,T05,Violencia Económica,1
+7,T06,Violencia en los derechos sexuales y reproductivos,1
+8,T07,No refiere hechos de violencia,1

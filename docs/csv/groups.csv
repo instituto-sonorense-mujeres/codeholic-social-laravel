@@ -1,0 +1,11 @@
+id,name,description,activo
+1,admin,Administración,1
+2,supervision,Supervisión,1
+3,direccionatencion,Dirección de Atención,1
+4,direccionprogramas,Dirección de Programas,1
+5,coordinacion,Coordinación regional,1
+6,atencion,Atención Ciudadana,1
+7,programas,Programas Sociales,1
+8,reportes,Reportes,1
+9,capturaatencion,Captura Atención Ciudadana,1
+10,capturaprogramas,Captura Programas Sociales,1

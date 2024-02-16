@@ -1,0 +1,17 @@
+id_escolaridad,escolaridad,escolaridad_activo
+1,Sin estudios elementales,1
+2,Primaria completa,1
+3,Primaria incompleta,1
+4,Secundaria completa,1
+5,Secundaria incompleta,1
+6,Preparatoria completa,1
+7,Preparatoria incompleta,1
+8,Universidad completa,1
+9,Universidad incompleta,1
+10,Carrera técnica completa,1
+11,Carrera técnica incompleta,1
+12,Posgrado completo,1
+13,Posgrado incompleto,1
+14,Preescolar,1
+15,Infante,1
+16,Lactante,1
