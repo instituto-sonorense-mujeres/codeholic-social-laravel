@@ -82,6 +82,15 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 1c8a
 # cambiar 'DB_HOST' en archivo .env por la ip retornada o nombre del contenedor, ejemplo:
 DB_HOST=codeholic-social-laravel-mysql-1
 
+# conectar a contenedor con mysql por terminal
+./vendor/bin/sail mysql -usail -ppassword
+
+# datos para conectar con datagrip
+host=localcost
+port=3306
+user=sail
+password=password
+database=laravel_social_media
 ```
 
 # CLONANDO REPOSITARIO DE GIT
