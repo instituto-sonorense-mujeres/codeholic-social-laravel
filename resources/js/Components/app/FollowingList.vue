@@ -1,6 +1,6 @@
 <script setup>
+import FollowingListItems from "@/Components/app/FollowingListItems.vue";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
-import GroupListItems from "@/Components/app/GroupListItems.vue";
 
 </script>
 
@@ -18,11 +18,13 @@ import GroupListItems from "@/Components/app/GroupListItems.vue";
           </div>
         </DisclosureButton>
         <DisclosurePanel>
+          <FollowingListItems />
         </DisclosurePanel>
       </Disclosure>
     </div>
     <div class="h-full overflow-hidden flex-col hidden lg:flex">
       <h2 class="text-xl font-bold">Usuarios que sigues.</h2>
+      <FollowingListItems />
     </div>
   </div>
 </template>
