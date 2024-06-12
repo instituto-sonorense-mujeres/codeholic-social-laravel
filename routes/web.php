@@ -18,7 +18,7 @@ use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index'])->middleware(['auth', 'verified'])->name('tablero');
 
-Route::get('/u/{username}', [ProfileController::class, 'getProfile'])->name('profile');
+Route::get('/u/{user:username}', [ProfileController::class, 'getProfile'])->name('profile');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
