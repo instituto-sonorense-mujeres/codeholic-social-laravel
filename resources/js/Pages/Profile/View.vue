@@ -8,7 +8,7 @@
             class="ml-[48px] w-[128px] h-[128px] -mt-[64px]">
           <div class="flex justify-between items-center flex-1 p-4">
             <h2 class="font-bold text-lg">{{ user.name }}</h2>
-            <PrimaryButton>
+            <PrimaryButton v-if="isMyProfile">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-4 h-4 mr-2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -22,8 +22,8 @@
       <div class="border-t">
         <TabGroup>
           <TabList class="flex bg-white">
-            <Tab v-slot="{ selected }" as="template">
-              <TabItem text="Acerca De" :selected="selected" />
+            <Tab v-if="isMyProfile" v-slot="{ selected }" as="template">
+              <TabItem text="Información" :selected="selected" />
             </Tab>
             <Tab v-slot="{ selected }" as="template">
               <TabItem text="Posts" :selected="selected" />
@@ -40,7 +40,7 @@
           </TabList>
 
           <TabPanels class="mt-2">
-            <TabPanel>
+            <TabPanel v-if="isMyProfile">
               <Edit :must-verify-email="mustVerifyEmail" :status="status" />
             </TabPanel>
             <TabPanel class="bg-white p-3 shadow">
@@ -72,7 +72,9 @@ import TabItem from "@/Pages/Profile/Partials/TabItem.vue";
 import Edit from "@/Pages/Profile/Edit.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 
-const user = usePage().props.auth.user;
+const authUser = usePage().props.auth.user;
+
+const isMyProfile = computed(() => authUser && authUser.id == props.user.id);
 
 const props = defineProps({
     mustVerifyEmail: {
