@@ -47,6 +47,12 @@ php artisan migrate
 ```
 
 
+# LOCAL-USER-DB-TABLE
+
+user: razzor@email.com
+pass: Razzor@2024
+
+
 # HOME-PC-REQUIREMENTS
 
 ```bash
@@ -113,4 +119,14 @@ composer require spatie/laravel-sluggable
 php artisan make:controller HomeController
 
 
+```
+
+# PART-6
+* se creo recurso en App\Http\Resources
+* se instalo heroicons
+
+```bash
+php artisan make:resource UserResource
+
+npm install @heroicons/vue
 ```
