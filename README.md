@@ -130,3 +130,5 @@ php artisan make:resource UserResource
 
 npm install @heroicons/vue
 ```
+
+* video timestamp: 47:00

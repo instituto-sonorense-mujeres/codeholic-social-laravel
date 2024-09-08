@@ -118,12 +118,17 @@ import TabItem from "@/Pages/Profile/Partials/TabItem.vue";
 import Edit from "@/Pages/Profile/Edit.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import { XMarkIcon, CheckCircleIcon } from '@heroicons/vue/24/solid';
+import { useForm } from '@inertiajs/vue3'
+
+const imagesForm = useForm({
+  avatar: null,
+  cover: null,
+})
 
 const authUser = usePage().props.auth.user;
 
 const isMyProfile = computed(() => authUser && authUser.id == props.user.id);
 
-let coverImageFile = null;
 const coverImageSrc = ref('');
 
 const props = defineProps({
@@ -139,24 +144,25 @@ const props = defineProps({
 });
 
 const onCoverChange = (e) => {
-  coverImageFile = e.target.files[0];
-  if (coverImageFile) {
+  imagesForm.cover = e.target.files[0];
+  if (imagesForm.cover) {
     const reader = new FileReader();
     reader.onload = () => {
       console.log("load happens");
       coverImageSrc.value = reader.result;
     }
-    reader.readAsDataURL(coverImageFile);
+    reader.readAsDataURL(imagesForm.cover);
   }
 }
 
 const cancelCoverImage = () => {
-  coverImageFile = null;
+  imagesForm.cover = null;
   coverImageSrc.value = null;
 }
 
 const submitCoverImage = () => {
-  console.log(coverImageFile)
+  console.log(imagesForm.cover);
+  imagesForm.post(route('profile.updateCover'));
 }
 
 </script>
