@@ -77,5 +77,9 @@ class ProfileController extends Controller
             $path = $cover->store('avatars/'.$user->id, 'public');
             $user->update(['cover_path' => $path]);
         }
+
+        session('success', 'Cover Image has beeen updated');
+
+        return back()->with('status', 'cover-image-update');
     }
 }

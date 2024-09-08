@@ -1,17 +1,19 @@
 <template>
   <AuthenticatedLayout>
+
     <div class="max-w-[768px] mx-auto h-full overflow-auto">
-      <!-- <div
-              v-show="showNotification && status === 'cover-image-update'"
-              class="my-2 py-2 px-3 font-medium text-sm bg-emerald-500 text-white"
-          >
-              Your cover image has been updated
-          </div>
-          <div
-              class="my-2 py-2 px-3 font-medium text-sm bg-red-400 text-white"
-          >
-              variable escapada con v-if
-          </div> -->
+
+      <div 
+        v-show="showNotification && status === 'cover-image-update'"
+        class="my-2 py-2 px-3 font-medium text-sm bg-emerald-500 text-white"
+      >
+        Your cover image has been updated
+      </div>
+
+      <!-- <div v-if="errors.cover" class="my-2 py-2 px-3 font-medium text-sm bg-red-400 text-white">
+        {{ errors.cover }}
+      </div> -->
+
       <div class="group relative bg-white">
         <!-- <img src="https://www.prodraw.net/fb_cover/images/fb_cover_65.jpg" class="w-full h-[200px] object-cover"> -->
         <!-- <img :src="coverImageSrc || user.cover_url || '/img/default_cover.jpg'"
@@ -126,6 +128,8 @@ const imagesForm = useForm({
   cover: null,
 })
 
+const showNotification = ref(true)
+
 const authUser = usePage().props.auth.user;
 
 const isMyProfile = computed(() => authUser && authUser.id == props.user.id);
@@ -164,7 +168,11 @@ const cancelCoverImage = () => {
 
 const submitCoverImage = () => {
   console.log(imagesForm.cover);
-  imagesForm.post(route('profile.updateCover'));
+  imagesForm.post(route('profile.updateCover'), {
+    onSuccess: (user) => {
+      console.log(user);
+    }
+  });
 }
 
 </script>
