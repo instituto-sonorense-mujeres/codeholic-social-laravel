@@ -124,11 +124,14 @@ php artisan make:controller HomeController
 # PART-6
 * se creo recurso en App\Http\Resources
 * se instalo heroicons
+* para generar SimboliLink Storage hay que entrar al bash del contenedor
+* video timestamp: 47:00
 
 ```bash
 php artisan make:resource UserResource
 
 npm install @heroicons/vue
-```
 
-* video timestamp: 47:00
+./vendor/bin/sail bash
+php artisan storage:link
+```

@@ -67,6 +67,15 @@ class ProfileController extends Controller
             'avatar' => ['nullable', 'image']
         ]);
 
-        dd($data);
+        $user = $request->user();
+
+        /** @var \Illuminate\Http\UploadedFile $cover */
+        $cover = $data['cover'] ?? null;
+        $avatar = $data['avatar'] ?? null;
+
+        if($cover) {
+            $path = $cover->store('avatars/'.$user->id, 'public');
+            $user->update(['cover_path' => $path]);
+        }
     }
 }

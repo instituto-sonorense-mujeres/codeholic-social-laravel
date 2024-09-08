@@ -15,7 +15,8 @@
       <div class="group relative bg-white">
         <!-- <img src="https://www.prodraw.net/fb_cover/images/fb_cover_65.jpg" class="w-full h-[200px] object-cover"> -->
         <!-- <img :src="coverImageSrc || user.cover_url || '/img/default_cover.jpg'"
-                   class="w-full h-[200px] object-cover"> -->
+        class="w-full h-[200px] object-cover"> -->
+        <pre>{{errors}}</pre>
         <img :src="coverImageSrc || user.cover_url || '/img/default.jpg'">
         <div class="absolute top-2 right-2 ">
           <button v-if="!coverImageSrc"
@@ -132,6 +133,7 @@ const isMyProfile = computed(() => authUser && authUser.id == props.user.id);
 const coverImageSrc = ref('');
 
 const props = defineProps({
+  errors: Object,
   mustVerifyEmail: {
       type: Boolean,
   },
