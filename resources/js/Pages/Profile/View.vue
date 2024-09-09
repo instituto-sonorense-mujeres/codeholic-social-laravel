@@ -1,7 +1,7 @@
 <template>
   <AuthenticatedLayout>
 
-    <div class="max-w-[768px] mx-auto h-full overflow-auto">
+    <div class="max-w-[768px] mx-auto min-h-screen overflow-auto">
 
       <div 
         v-show="showNotification && status === 'cover-image-update'"
@@ -10,15 +10,11 @@
         Your cover image has been updated
       </div>
 
-      <!-- <div v-if="errors.cover" class="my-2 py-2 px-3 font-medium text-sm bg-red-400 text-white">
+      <div v-if="errors.cover" class="my-2 py-2 px-3 font-medium text-sm bg-red-400 text-white">
         {{ errors.cover }}
-      </div> -->
+      </div>
 
       <div class="group relative bg-white">
-        <!-- <img src="https://www.prodraw.net/fb_cover/images/fb_cover_65.jpg" class="w-full h-[200px] object-cover"> -->
-        <!-- <img :src="coverImageSrc || user.cover_url || '/img/default_cover.jpg'"
-        class="w-full h-[200px] object-cover"> -->
-        <pre>{{errors}}</pre>
         <img :src="coverImageSrc || user.cover_url || '/img/default.jpg'">
         <div class="absolute top-2 right-2 ">
           <button v-if="!coverImageSrc"
@@ -167,10 +163,14 @@ const cancelCoverImage = () => {
 }
 
 const submitCoverImage = () => {
-  console.log(imagesForm.cover);
+  console.log({"img":imagesForm.cover});
   imagesForm.post(route('profile.updateCover'), {
     onSuccess: (user) => {
-      console.log(user);
+      console.log({"usuario":user});
+      cancelCoverImage();
+      setTimeout( () => {
+        showNotification.value = false;
+      })
     }
   });
 }
