@@ -1,19 +1,14 @@
 <template>
   <AuthenticatedLayout>
-
-    <div class="max-w-[768px] mx-auto min-h-screen overflow-auto">
-
-      <div v-show="showNotification && status === 'cover-image-update'"
-        class="my-2 py-2 px-3 font-medium text-sm bg-emerald-500 text-white">
-        Your cover image has been updated
+    <div class="max-w-[768px] mx-auto h-full overflow-auto">
+      <div v-show="showNotification && success" class="my-2 py-2 px-3 font-medium text-sm bg-emerald-500 text-white">
+        {{ success }}
       </div>
-
       <div v-if="errors.cover" class="my-2 py-2 px-3 font-medium text-sm bg-red-400 text-white">
         {{ errors.cover }}
       </div>
-
       <div class="group relative bg-white">
-        <img :src="coverImageSrc || user.cover_url || '/img/default.jpg'">
+        <img :src="coverImageSrc || user.cover_url || '/img/default_cover.jpg'" class="w-full h-[200px] object-cover">
         <div class="absolute top-2 right-2 ">
           <button v-if="!coverImageSrc"
             class="bg-gray-50 hover:bg-gray-100 text-gray-800 py-1 px-2 text-xs flex items-center opacity-0 group-hover:opacity-100">
@@ -25,12 +20,11 @@
                 d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
             </svg>
 
-            actualizar imagen
+            Update Cover Image
             <input type="file" class="absolute left-0 top-0 bottom-0 right-0 opacity-0" @change="onCoverChange" />
           </button>
-
           <div v-else class="flex gap-2 bg-white p-2 opacity-0 group-hover:opacity-100">
-            <button @click="cancelCoverImage"
+            <button @click="resetCoverImage"
               class="bg-gray-50 hover:bg-gray-100 text-gray-800 py-1 px-2 text-xs flex items-center">
               <XMarkIcon class="h-3 w-3 mr-2" />
               Cancel
@@ -42,7 +36,6 @@
             </button>
           </div>
         </div>
-
 
         <div class="flex">
           <div
@@ -65,6 +58,17 @@
                 <CheckCircleIcon class="h-5 w-5" />
               </button>
             </div>
+          </div>
+          <div class="flex justify-between items-center flex-1 p-4">
+            <h2 class="font-bold text-lg">{{ user.name }}</h2>
+            <PrimaryButton v-if="isMyProfile">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+              </svg>
+              Edit Profile
+            </PrimaryButton>
           </div>
         </div>
       </div>
@@ -113,13 +117,13 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { XMarkIcon, CheckCircleIcon, CameraIcon } from '@heroicons/vue/24/solid'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-import { usePage } from '@inertiajs/vue3';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { usePage } from "@inertiajs/vue3";
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import TabItem from "@/Pages/Profile/Partials/TabItem.vue";
 import Edit from "@/Pages/Profile/Edit.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
-import { XMarkIcon, CheckCircleIcon, CameraIcon } from '@heroicons/vue/24/solid';
 import { useForm } from '@inertiajs/vue3'
 
 const imagesForm = useForm({
@@ -128,91 +132,83 @@ const imagesForm = useForm({
 })
 
 const showNotification = ref(true)
-
+const coverImageSrc = ref('')
+const avatarImageSrc = ref('')
 const authUser = usePage().props.auth.user;
 
-const isMyProfile = computed(() => authUser && authUser.id == props.user.id);
-
-const coverImageSrc = ref('');
-const avatarImageSrc = ref('')
+const isMyProfile = computed(() => authUser && authUser.id === props.user.id)
 
 const props = defineProps({
   errors: Object,
   mustVerifyEmail: {
-      type: Boolean,
+    type: Boolean,
   },
   status: {
-      type: String,
+    type: String,
+  },
+  success: {
+    type: String,
   },
   user: {
-      type: Object
+    type: Object
   }
 });
 
-const onCoverChange = (e) => {
-  imagesForm.cover = e.target.files[0];
+function onCoverChange(event) {
+  imagesForm.cover = event.target.files[0]
   if (imagesForm.cover) {
-    const reader = new FileReader();
+    const reader = new FileReader()
     reader.onload = () => {
-      console.log("load happens");
       coverImageSrc.value = reader.result;
     }
-    reader.readAsDataURL(imagesForm.cover);
+    reader.readAsDataURL(imagesForm.cover)
   }
 }
 
-
-const onAvatarChange = (e) => {
-  imagesForm.avatar = e.target.files[0];
+function onAvatarChange(event) {
+  imagesForm.avatar = event.target.files[0]
   if (imagesForm.avatar) {
-    const reader = new FileReader();
+    const reader = new FileReader()
     reader.onload = () => {
-      console.log("load happens");
       avatarImageSrc.value = reader.result;
     }
-    reader.readAsDataURL(imagesForm.avatar);
+    reader.readAsDataURL(imagesForm.avatar)
   }
 }
 
-const cancelCoverImage = () => {
+function resetCoverImage() {
   imagesForm.cover = null;
-  coverImageSrc.value = null;
+  coverImageSrc.value = null
 }
 
-const cancelAvatarImage = () => {
+function resetAvatarImage() {
   imagesForm.avatar = null;
-  avatarImageSrc.value = null;
+  avatarImageSrc.value = null
 }
 
-const submitCoverImage = () => {
-  console.log({"img":imagesForm.cover});
-  imagesForm.post(route('profile.updateCover'), {
+function submitCoverImage() {
+  imagesForm.post(route('profile.updateImages'), {
     onSuccess: (user) => {
-      console.log({"usuario":user});
-      cancelCoverImage();
-      setTimeout( () => {
-        showNotification.value = false;
-      })
-    }
-  });
+      resetCoverImage()
+      setTimeout(() => {
+        showNotification.value = false
+      }, 3000)
+    },
+  })
 }
 
-const submitAvatarImage = () => {
-  console.log({"img":imagesForm.cover});
-  imagesForm.post(route('profile.updateCover'), {
+function submitAvatarImage() {
+  imagesForm.post(route('profile.updateImages'), {
     onSuccess: (user) => {
-      console.log({"usuario":user});
-      cancelAvatarImage();
-      setTimeout( () => {
-        showNotification.value = false;
-      })
-    }
-  });
+      resetAvatarImage()
+      setTimeout(() => {
+        showNotification.value = false
+      }, 3000)
+    },
+  })
 }
 
 </script>
 
 
-<style scoped>
-
-</style>
+<style scoped></style>
