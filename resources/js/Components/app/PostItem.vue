@@ -13,7 +13,7 @@ function isImage(attachment) {
 </script>
 
 <template>
-    <div class="bg-white border rounded p-4 mb-3">
+    <div class="bg-white border rounded p-4 mb-3 dark:bg-gray-800">
         <div class="flex items-center gap-2 mb-3">
             <a href="javascript:void(0)">
                 <img :src="post.user.avatar"

@@ -5,7 +5,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 </script>
 
 <template>
-  <div class="px-3 bg-white rounded border h-full py-3 overflow-hidden">
+  <div class="px-3 bg-white rounded border h-full py-3 overflow-hidden dark:bg-gray-800">
     <div class="block lg:hidden">
       <Disclosure v-slot="{ open }">
         <DisclosureButton class="w-full">
