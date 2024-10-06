@@ -21,16 +21,16 @@ function isImage(attachment) {
             </a>
             <div>
                 <h4 class="font-bold">
-                    <a href="javascript:void(0)" class="hover:underline">{{ post.user.name }}</a>
+                    <a href="javascript:void(0)" class="hover:underline dark:text-gray-300">{{ post.user.name }}</a>
                     <template v-if="post.group">
                         >
-                        <a href="javascript:void(0)" class="hover:underline">{{ post.group.name }}</a>
+                        <a href="javascript:void(0)" class="hover:underline dark:text-gray-300">{{ post.group.name }}</a>
                     </template>
                 </h4>
                 <small class="text-gray-400">{{ post.created_at }}</small>
             </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm">
             <Disclosure v-slot="{ open }">
                 <div v-if="!open" v-html="post.body.substring(0, 200)"/>
                 <DisclosurePanel>

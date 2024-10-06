@@ -136,3 +136,18 @@ php artisan storage:link
 ```
 
 - video timestamp: 1:20:00
+
+```html
+<div class="p-4 bg-white rounded-lg border mb-3 dark:bg-gray-800"></div>
+```
+
+border-gray-300 
+dark:border-gray-700 
+dark:bg-gray-900 
+dark:text-gray-300 
+focus:border-indigo-500 
+dark:focus:border-indigo-600 
+focus:ring-indigo-500 
+dark:focus:ring-indigo-600 
+rounded-md 
+shadow-sm
